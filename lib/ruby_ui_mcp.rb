@@ -2,7 +2,16 @@
 
 require_relative "ruby_ui_mcp/version"
 
-module RubyUIMCP
+require "net/http"
+require "nokogiri"
+
+module RubyUI_MCP
   class Error < StandardError; end
-  # Your code goes here...
+
+  module DocsApi
+    autoload :Objects, "ruby_ui_mcp/docs_api/objects"
+    autoload :Parser, "ruby_ui_mcp/docs_api/parser"
+  end
+
+  autoload :Docs, "ruby_ui_mcp/docs"
 end
