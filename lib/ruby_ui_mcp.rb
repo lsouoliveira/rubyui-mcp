@@ -11,6 +11,8 @@ module RubyUI_MCP
   module DocsApi
     autoload :Objects, "ruby_ui_mcp/docs_api/objects"
     autoload :Parser, "ruby_ui_mcp/docs_api/parser"
+    autoload :ComponentReferencesExtractor, "ruby_ui_mcp/docs_api/component_references_extractor"
+    autoload :ComponentExtractor, "ruby_ui_mcp/docs_api/component_extractor"
   end
 
   autoload :Docs, "ruby_ui_mcp/docs"
