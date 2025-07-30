@@ -12,7 +12,8 @@ module RubyUI_MCP
           @content,
           selectors: {
             sidebar_groups: 'div[data-controller*="sidebar-menu"] div.grid',
-            sidebar_entry: "a"
+            sidebar_entry: "a",
+            sidebar_entry_name: "span > span"
           }
         ).extract
       end

@@ -20,7 +20,7 @@ module RubyUI_MCP
 
       def build_component_reference(link)
         Objects::ComponentReference.new(
-          name: link.inner_text&.strip,
+          name: link.at_css(@selectors[:sidebar_entry_name])&.text&.strip,
           url: link["href"]&.strip
         )
       end
