@@ -1,0 +1,219 @@
+{
+  "components": [
+    {
+      "name": "Accordion",
+      "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+      "url": "https://rubyui.com/docs/accordion"
+    },
+    {
+      "name": "Alert",
+      "description": "Displays a callout for user attention.",
+      "url": "https://rubyui.com/docs/alert"
+    },
+    {
+      "name": "Alert Dialog",
+      "description": "A modal dialog that interrupts the user with important content and expects a response.",
+      "url": "https://rubyui.com/docs/alert_dialog"
+    },
+    {
+      "name": "Aspect Ratio",
+      "description": "Displays content within a desired ratio.",
+      "url": "https://rubyui.com/docs/aspect_ratio"
+    },
+    {
+      "name": "Avatar",
+      "description": "An image element with a fallback for representing the user.",
+      "url": "https://rubyui.com/docs/avatar"
+    },
+    {
+      "name": "Badge",
+      "description": "Displays a badge or a component that looks like a badge.",
+      "url": "https://rubyui.com/docs/badge"
+    },
+    {
+      "name": "Breadcrumb",
+      "description": "Indicates the user's current location within a navigational hierarchy.",
+      "url": "https://rubyui.com/docs/breadcrumb"
+    },
+    {
+      "name": "Button",
+      "description": "Displays a button or a component that looks like a button.",
+      "url": "https://rubyui.com/docs/button"
+    },
+    {
+      "name": "Calendar",
+      "description": "A date field component that allows users to enter and edit date.",
+      "url": "https://rubyui.com/docs/calendar"
+    },
+    {
+      "name": "Card",
+      "description": "Displays a card with header, content, and footer.",
+      "url": "https://rubyui.com/docs/card"
+    },
+    {
+      "name": "Carousel",
+      "description": "A carousel with motion and swipe built using Embla.",
+      "url": "https://rubyui.com/docs/carousel"
+    },
+    {
+      "name": "Checkbox",
+      "description": "A control that allows the user to toggle between checked and not checked.",
+      "url": "https://rubyui.com/docs/checkbox"
+    },
+    {
+      "name": "Checkbox Group",
+      "description": "A control that allows the user to toggle between checked and not checked.",
+      "url": "https://rubyui.com/docs/checkbox_group"
+    },
+    {
+      "name": "Clipboard",
+      "description": "A control to allow you to copy content to the clipboard.",
+      "url": "https://rubyui.com/docs/clipboard"
+    },
+    {
+      "name": "Codeblock",
+      "description": "A component for displaying highlighted code.",
+      "url": "https://rubyui.com/docs/codeblock"
+    },
+    {
+      "name": "Collapsible",
+      "description": "An interactive component which expands/collapses a panel.",
+      "url": "https://rubyui.com/docs/collapsible"
+    },
+    {
+      "name": "Combobox",
+      "description": "Autocomplete input and command palette with a list of suggestions.",
+      "url": "https://rubyui.com/docs/combobox"
+    },
+    {
+      "name": "Command",
+      "description": "Fast, composable, unstyled command menu for Phlex.",
+      "url": "https://rubyui.com/docs/command"
+    },
+    {
+      "name": "Context Menu",
+      "description": "Displays a menu to the user â such as a set of actions or functions â triggered by a right click.",
+      "url": "https://rubyui.com/docs/context_menu"
+    },
+    {
+      "name": "Date Picker",
+      "description": "A date picker component with input.",
+      "url": "https://rubyui.com/docs/date_picker"
+    },
+    {
+      "name": "Dialog",
+      "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.",
+      "url": "https://rubyui.com/docs/dialog"
+    },
+    {
+      "name": "Dropdown Menu",
+      "description": "Displays a menu to the user â such as a set of actions or functions â triggered by a button.",
+      "url": "https://rubyui.com/docs/dropdown_menu"
+    },
+    {
+      "name": "Form",
+      "description": "Building forms with built-in client-side validations.",
+      "url": "https://rubyui.com/docs/form"
+    },
+    {
+      "name": "Hover Card",
+      "description": "For sighted users to preview content available behind a link.",
+      "url": "https://rubyui.com/docs/hover_card"
+    },
+    {
+      "name": "Input",
+      "description": "Displays a form input field or a component that looks like an input field.",
+      "url": "https://rubyui.com/docs/input"
+    },
+    {
+      "name": "Link",
+      "description": "Displays a link that looks like a button or underline link.",
+      "url": "https://rubyui.com/docs/link"
+    },
+    {
+      "name": "MaskedInput",
+      "description": "Displays a form input field with applied mask.",
+      "url": "https://rubyui.com/docs/masked_input"
+    },
+    {
+      "name": "Pagination",
+      "description": "Pagination with page navigation, next and previous links.",
+      "url": "https://rubyui.com/docs/pagination"
+    },
+    {
+      "name": "Popover",
+      "description": "Displays rich content in a portal, triggered by a button.",
+      "url": "https://rubyui.com/docs/popover"
+    },
+    {
+      "name": "Progress",
+      "description": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "url": "https://rubyui.com/docs/progress"
+    },
+    {
+      "name": "Radio Button",
+      "description": "A control that allows users to make a single selection from a list of options.",
+      "url": "https://rubyui.com/docs/radio_button"
+    },
+    {
+      "name": "Select",
+      "description": "Displays a list of options for the user to pick fromâtriggered by a button.",
+      "url": "https://rubyui.com/docs/select"
+    },
+    {
+      "name": "Separator",
+      "description": "Visually or semantically separates content.",
+      "url": "https://rubyui.com/docs/separator"
+    },
+    {
+      "name": "Sheet",
+      "description": "Extends the Sheet component to display content that complements the main content of the screen.",
+      "url": "https://rubyui.com/docs/sheet"
+    },
+    {
+      "name": "Shortcut Key",
+      "description": "A component for displaying keyboard shortcuts.",
+      "url": "https://rubyui.com/docs/shortcut_key"
+    },
+    {
+      "name": "Skeleton",
+      "description": "Use to show a placeholder while content is loading.",
+      "url": "https://rubyui.com/docs/skeleton"
+    },
+    {
+      "name": "Switch",
+      "description": "A control that allows the user to toggle between checked and not checked.",
+      "url": "https://rubyui.com/docs/switch"
+    },
+    {
+      "name": "Table",
+      "description": "A responsive table component.",
+      "url": "https://rubyui.com/docs/table"
+    },
+    {
+      "name": "Tabs",
+      "description": "A set of layered sections of contentâknown as tab panelsâthat are displayed one at a time.",
+      "url": "https://rubyui.com/docs/tabs"
+    },
+    {
+      "name": "Textarea",
+      "description": "Displays a textarea field.",
+      "url": "https://rubyui.com/docs/textarea"
+    },
+    {
+      "name": "Theme Toggle",
+      "description": "Toggle between dark/light theme.",
+      "url": "https://rubyui.com/docs/theme_toggle"
+    },
+    {
+      "name": "Tooltip",
+      "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "url": "https://rubyui.com/docs/tooltip"
+    },
+    {
+      "name": "Typography",
+      "description": "Sensible defaults to use for text.",
+      "url": "https://rubyui.com/docs/typography"
+    }
+  ]
+}
