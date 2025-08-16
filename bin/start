@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "ruby_ui_mcp"
+
+RubyUI_MCP.setup
+
+server = RubyUI_MCP::DefaultServer.new
+server.setup
+server.start
