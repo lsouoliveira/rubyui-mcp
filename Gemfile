@@ -14,3 +14,5 @@ gem "minitest", "~> 5.25"
 gem "standard", "~> 1.50"
 
 gem "nokogiri", "~> 1.18"
+
+gem "fast-mcp", "~> 1.5"
