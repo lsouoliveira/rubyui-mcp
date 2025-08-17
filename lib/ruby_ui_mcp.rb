@@ -19,6 +19,7 @@ module RubyUI_MCP
 
   module Tools
     autoload :RequirementStructuring, "ruby_ui_mcp/tools/requirement_structuring"
+    autoload :ComponentsFilter, "ruby_ui_mcp/tools/components_filter"
   end
 
   autoload :Docs, "ruby_ui_mcp/docs"

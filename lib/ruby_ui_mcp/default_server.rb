@@ -6,6 +6,7 @@ module RubyUI_MCP
 
     def setup
       @server.register_tool(Tools::RequirementStructuring)
+      @server.register_tool(Tools::ComponentsFilter)
     end
 
     def start
