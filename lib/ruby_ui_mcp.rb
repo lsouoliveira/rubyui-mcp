@@ -26,6 +26,8 @@ module RubyUI_MCP
   autoload :Server, "ruby_ui_mcp/server"
   autoload :PromptLibrary, "ruby_ui_mcp/prompt_library"
   autoload :DefaultServer, "ruby_ui_mcp/default_server"
+  autoload :ComponentsCatalog, "ruby_ui_mcp/components_catalog"
+  autoload :Config, "ruby_ui_mcp/config"
 
   def self.logger
     return @logger if defined?(@logger)
@@ -36,21 +38,26 @@ module RubyUI_MCP
     @logger
   end
 
-  def self.prompt_library
-    @_prompt_library ||= PromptLibrary.new
-  end
-
   def self.setup
+    config.prompt_library = PromptLibrary.new
+    config.catalog = ComponentsCatalog.load(File.join(__dir__, "..", "catalog.json"))
+
     load_prompts
   end
+
+  def self.config
+    @config ||= Config.new
+  end
+
+  def self.prompt_library = config.prompt_library
+
+  def self.catalog = config.catalog
 
   private
 
   def self.load_prompts
     Dir.glob(File.join(__dir__, "ruby_ui_mcp", "prompts", "*.md")).each do |file|
-      filename = File.basename(file)
-
-      prompt_library.load_prompt(filename)
+      config.prompt_library.load_prompt(File.basename(file))
     end
   end
 end
