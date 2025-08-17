@@ -1,6 +1,8 @@
 module RubyUI_MCP
   module Tools
     class ComponentsUsageDoc < FastMcp::Tool
+      tool_name "components_usage_doc"
+
       description "Read usage documentation of a RubyUI component. Use this tool when mentions /doc or when you need to get detailed documentation for a specific component."
 
       arguments do

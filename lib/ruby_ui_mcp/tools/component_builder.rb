@@ -1,10 +1,12 @@
 module RubyUI_MCP
   module Tools
     class ComponentBuilder < FastMcp::Tool
-      description "Retrieve documentation for all filtered components to prepare for component generation. This tool ONLY returns the documentation for the UI components."
+      tool_name "component_builder"
+
+      description "Retrieve documentation for all filtered components to prepare for component generation, This tool ONLY returns the text snippet for that UI component. After calling this tool, you must edit or add files to integrate the snippet into the codebase."
 
       arguments do
-        required(:components).filled(:string).description("Components array from components-filter tool, containing component objects with name, necessity, and justification")
+        required(:components).filled(:string).description("Components from components-filter tool, containing component objects with name, necessity, and justification")
       end
 
       def call(components:)
@@ -25,7 +27,9 @@ module RubyUI_MCP
       private
 
       def parse_components(components)
-        JSON.parse(components)
+        parsed_data = JSON.parse(components)
+
+        parsed_data.is_a?(Array) ? parsed_data : parsed_data["components"]
       rescue JSON::ParserError
         raise ArgumentError, "Invalid components format. Expected a JSON array."
       end

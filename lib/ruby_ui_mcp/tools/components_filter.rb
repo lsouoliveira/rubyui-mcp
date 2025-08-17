@@ -3,6 +3,8 @@ module RubyUI_MCP
     class ComponentsFilter < FastMcp::Tool
       PROMPT_NAME = "components_filter.md"
 
+      tool_name "components_filter"
+
       description "Filter components with RubyUI components and TailwindCSS. Use this tool when mentions /filter or when you need to select appropriate components based on structured requirements."
 
       arguments do
