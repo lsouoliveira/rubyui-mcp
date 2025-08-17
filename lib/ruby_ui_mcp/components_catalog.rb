@@ -56,7 +56,9 @@ module RubyUI_MCP
     end
 
     def search_component(name)
-      @components_map[name.strip]
+      @components_map.find do |key, component|
+        key.casecmp(name).zero?
+      end&.last
     end
 
     def self.load(path)

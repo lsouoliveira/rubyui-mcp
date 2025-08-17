@@ -20,6 +20,13 @@ module RubyUI_MCP
   module Tools
     autoload :RequirementStructuring, "ruby_ui_mcp/tools/requirement_structuring"
     autoload :ComponentsFilter, "ruby_ui_mcp/tools/components_filter"
+    autoload :ComponentsUsageDoc, "ruby_ui_mcp/tools/components_usage_doc"
+  end
+
+  module Services
+    autoload :ComponentsService, "ruby_ui_mcp/services/components_service"
+    autoload :CachedComponentsService, "ruby_ui_mcp/services/cached_components_service"
+    autoload :ComponentDocRenderer, "ruby_ui_mcp/services/component_doc_renderer"
   end
 
   autoload :Docs, "ruby_ui_mcp/docs"
@@ -52,6 +59,10 @@ module RubyUI_MCP
   def self.prompt_library = config.prompt_library
 
   def self.catalog = config.catalog
+
+  def self.cached_components_service
+    @cached_components_service ||= Services::CachedComponentsService.new(catalog)
+  end
 
   private
 
