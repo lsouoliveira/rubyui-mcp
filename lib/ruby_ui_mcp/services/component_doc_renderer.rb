@@ -20,6 +20,10 @@ module RubyUI_MCP
         content.join("\n")
       end
 
+      def self.render(component)
+        new(component).render
+      end
+
       private
 
       def render_description

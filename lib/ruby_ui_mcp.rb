@@ -21,12 +21,15 @@ module RubyUI_MCP
     autoload :RequirementStructuring, "ruby_ui_mcp/tools/requirement_structuring"
     autoload :ComponentsFilter, "ruby_ui_mcp/tools/components_filter"
     autoload :ComponentsUsageDoc, "ruby_ui_mcp/tools/components_usage_doc"
+    autoload :ComponentBuilder, "ruby_ui_mcp/tools/component_builder"
   end
 
   module Services
     autoload :ComponentsService, "ruby_ui_mcp/services/components_service"
     autoload :CachedComponentsService, "ruby_ui_mcp/services/cached_components_service"
     autoload :ComponentDocRenderer, "ruby_ui_mcp/services/component_doc_renderer"
+    autoload :ComponentDocumentationFormatter, "ruby_ui_mcp/services/component_documentation_formatter"
+    autoload :ComponentNecessityFilter, "ruby_ui_mcp/services/component_necessity_filter"
   end
 
   autoload :Docs, "ruby_ui_mcp/docs"
