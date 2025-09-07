@@ -48,7 +48,7 @@ module RubyUI_MCP
       end
 
       def fetch_component_docs(components)
-        components.map { fetch_component_doc(component["name"]) }
+        components.map { fetch_component_doc(it["name"]) }
       end
 
       def fetch_component_doc(component_name)
