@@ -4,6 +4,12 @@ A MCP for building RubyUI components.
 
 ## Examples
 
+### Storefront
+
+<div align="center">
+  <img alt="image" src="https://github.com/user-attachments/assets/0048bb9e-62c8-47eb-9f5b-7d40ea196bab" height="400" />
+</div>
+
 ### Suppliers
 
 <div align="center">
@@ -17,12 +23,6 @@ A MCP for building RubyUI components.
       <td><img src="https://github.com/user-attachments/assets/b91b833f-d57e-44c8-82cc-79b05cdeed36" width="400"/></td>
     </tr>
   </table>
-</div>
-
-### Storefront
-
-<div align="center">
-  <img alt="image" src="https://github.com/user-attachments/assets/0048bb9e-62c8-47eb-9f5b-7d40ea196bab" height="400" />
 </div>
 
 ## Acknowledgements
