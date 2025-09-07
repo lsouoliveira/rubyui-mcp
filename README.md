@@ -28,7 +28,7 @@ A MCP for building RubyUI components.
       <td><img src="https://github.com/user-attachments/assets/d71b780b-f554-49c1-a73e-b280052a65c1" width="400"/></td>
     </tr>
     <tr>
-      <td></td><img src="https://github.com/user-attachments/assets/59f53211-91d7-4be8-939d-ada7c2ef7164" width="400" /></td>
+      <td><img src="https://github.com/user-attachments/assets/59f53211-91d7-4be8-939d-ada7c2ef7164" width="400" /></td>
       <td><img src="https://github.com/user-attachments/assets/58a237f4-d18b-4809-a97b-9b33e9d0471a" width="400"/></td>
     </tr>
   </table>
