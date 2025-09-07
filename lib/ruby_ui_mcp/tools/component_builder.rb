@@ -6,7 +6,9 @@ module RubyUI_MCP
       description "Retrieve documentation for all filtered components to prepare for component generation, This tool ONLY returns the text snippet for that UI component. After calling this tool, you must edit or add files to integrate the snippet into the codebase."
 
       arguments do
-        required(:components).filled(:string).description("Components from components-filter tool, containing component objects with name, necessity, and justification")
+        required(:components)
+          .filled(:string)
+          .description("Components from components-filter tool, containing component objects with name, necessity, and justification")
       end
 
       def call(components:)
@@ -14,14 +16,7 @@ module RubyUI_MCP
         filtered_components = filter_components(parsed_components)
         component_docs = fetch_component_docs(filtered_components)
 
-        {
-          content: [
-            {
-              type: "text",
-              text: RubyUI_MCP::Services::ComponentDocumentationFormatter.generate(component_docs)
-            }
-          ]
-        }
+        RubyUI_MCP::Services::ComponentDocumentationFormatter.generate(component_docs)
       end
 
       private
@@ -40,9 +35,7 @@ module RubyUI_MCP
           "optional"
         )
 
-        if filtered_components.empty?
-          raise ArgumentError, "No components found with the specified necessity."
-        end
+        raise ArgumentError, "No components found with the specified necessity." if filtered_components.empty?
 
         filtered_components
       end
@@ -62,6 +55,8 @@ module RubyUI_MCP
           doc: RubyUI_MCP::Services::ComponentDocRenderer.render(doc)
         }
       rescue => e
+        RubyUI_MCP.logger.warn("Failed to fetch documentation for component '#{component_name}': #{e.message}")
+
         {
           name: component_name,
           type: "component",

@@ -12,25 +12,9 @@ module RubyUI_MCP
       end
 
       def call(message:)
-        JSON.parse(message)
-
-        {
-          content: [
-            {
-              type: "text",
-              text: render_prompt(message)
-            }
-          ]
-        }
+        render_prompt(message)
       rescue JSON::ParserError
-        {
-          content: [
-            {
-              type: "text",
-              text: '{"error": "Invalid input format. Expected structured JSON."}'
-            }
-          ]
-        }
+        raise "Invalid input format. Expected structured JSON."
       end
 
       private

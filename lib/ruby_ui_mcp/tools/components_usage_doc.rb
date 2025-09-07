@@ -12,32 +12,14 @@ module RubyUI_MCP
       def call(name:)
         component = RubyUI_MCP.catalog.search_component(name)
 
-        if component.nil?
-          return {
-            content: [
-              {
-                type: "text",
-                text: "Error: Component '#{name}' not found in the RubyUI catalog. Please check the component name and try again."
-              }
-            ]
-          }
-        end
+        raise "Component '#{name}' not found in the RubyUI catalog." if component.nil?
 
-        component_doc = create_component_doc(name, component)
-
-        {
-          content: [
-            {
-              type: "text",
-              text: component_doc
-            }
-          ]
-        }
+        get_component_doc(name, component)
       end
 
       private
 
-      def create_component_doc(name, catalog_component)
+      def get_component_doc(name, catalog_component)
         component = RubyUI_MCP.cached_components_service.get_component(name)
 
         renderer = RubyUI_MCP::Services::ComponentDocRenderer.new(component)

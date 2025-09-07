@@ -11,16 +11,7 @@ module RubyUI_MCP
         required(:message).filled(:string).description("Content about user requirement in specific contextual information")
       end
 
-      def call(message:)
-        {
-          content: [
-            {
-              type: "text",
-              text: prompt
-            }
-          ]
-        }
-      end
+      def call(message:) = prompt
 
       private
 
