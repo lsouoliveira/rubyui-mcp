@@ -5,10 +5,18 @@ module RubyUI_MCP
 
       tool_name "components_filter"
 
-      description "Filter components with RubyUI components and TailwindCSS. Use this tool when mentions /filter or when you need to select appropriate components based on structured requirements."
+      description do
+        <<-DESCRIPTION
+          Filter components with RubyUI components and TailwindCSS. 
+          Use this tool when mentions /filter or when you need to 
+          select appropriate components based on structured requirements.
+        DESCRIPTION
+      end
 
       arguments do
-        required(:message).filled(:string).description("Requirement JSON from requirement-structuring tool")
+        required(:message)
+          .filled(:string)
+          .description("Requirement JSON from requirement-structuring tool")
       end
 
       def call(message:)

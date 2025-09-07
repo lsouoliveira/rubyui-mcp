@@ -3,7 +3,14 @@ module RubyUI_MCP
     class ComponentBuilder < FastMcp::Tool
       tool_name "component_builder"
 
-      description "Retrieve documentation for all filtered components to prepare for component generation, This tool ONLY returns the text snippet for that UI component. After calling this tool, you must edit or add files to integrate the snippet into the codebase."
+      description do
+        <<-DESCRIPTION
+          Retrieve documentation for all filtered components to prepare for 
+          component generation, This tool ONLY returns the text snippet for 
+          that UI component. After calling this tool, you must edit or 
+          add files to integrate the snippet into the codebase."
+        DESCRIPTION
+      end
 
       arguments do
         required(:components)
@@ -41,9 +48,7 @@ module RubyUI_MCP
       end
 
       def fetch_component_docs(components)
-        components.map do |component|
-          fetch_component_doc(component["name"])
-        end
+        components.map { fetch_component_doc(component["name"]) }
       end
 
       def fetch_component_doc(component_name)

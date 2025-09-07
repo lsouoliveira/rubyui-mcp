@@ -3,10 +3,18 @@ module RubyUI_MCP
     class ComponentsUsageDoc < FastMcp::Tool
       tool_name "components_usage_doc"
 
-      description "Read usage documentation of a RubyUI component. Use this tool when mentions /doc or when you need to get detailed documentation for a specific component."
+      description do
+        <<-DESCRIPTION
+          Read usage documentation of a RubyUI component. 
+          Use this tool when mentions /doc or when you need to get 
+          detailed documentation for a specific component.
+        DESCRIPTION
+      end
 
       arguments do
-        required(:name).filled(:string).description("Name of the component in lowercase (e.g., 'button', 'card', 'dialog', 'aspect ratio')")
+        required(:name)
+          .filled(:string)
+          .description("Name of the component in lowercase (e.g., 'button', 'card', 'dialog', 'aspect ratio')")
       end
 
       def call(name:)
