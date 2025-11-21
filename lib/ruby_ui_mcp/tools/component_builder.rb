@@ -3,14 +3,7 @@ module RubyUI_MCP
     class ComponentBuilder < FastMcp::Tool
       tool_name "component_builder"
 
-      description do
-        <<-DESCRIPTION
-          Retrieve documentation for all filtered components to prepare for 
-          component generation, This tool ONLY returns the text snippet for 
-          that UI component. After calling this tool, you must edit or 
-          add files to integrate the snippet into the codebase."
-        DESCRIPTION
-      end
+      description "Retrieve documentation for all filtered components to prepare for component generation, This tool ONLY returns the text snippet for that UI component. After calling this tool, you must edit or add files to integrate the snippet into the codebase."
 
       arguments do
         required(:components)
